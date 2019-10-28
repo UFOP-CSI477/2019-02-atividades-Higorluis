@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Corrida</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="corrida.js"></script>
+    <link rel="stylesheet" href="corrida.css">
+
+</head>
+<body>
+    <div>
+        <h1>Corrida de carrinhos de rolimã</h1>
+    </div>
+    <div class="container" >
+	<form name="dados" class="form-group">  
+        <div id="grupo1" class="form-group">
+        <label for="posicao" id="label1">Largada</label>
+        <input type="number" name="posicao" value="" id="posicao" class="form-control">
+        <div id="alerta3" class="alert alert-danger" style="display: none">
+            <spam>Preencha o primeiro valor corretamente!</spam>
+    
+        </div>    
+        </div>    
+        
+        <div id="grupo2" class="form-group">
+        <label for="nome" id="label2">Competidor(a)</label>
+        <input type="text" name="nome" value="" id="nome" class="form-control">
+        <div id="alerta1" class="alert alert-danger" style="display: none">
+			<spam>Preencha o segundo valor corretamente!</spam>
+
+		</div>
+        </div>
+
+        <div id="grupo3" class="form-group">
+        <label for="tempo" id="label3">Tempo (s)</label>
+        <input type="text" name="tempo" value="" id="tempo" class="form-control">
+        <div id="alerta2" class="alert alert-danger" style="display: none">
+			<spam>Preencha o terceiro valor corretamente!</spam>
+
+		</div>    
+        </div>
+        
+      
+        <input type="button" value="Adicionar" onclick="processar('tabela')" class="btn btn-success" id="adicionar"> 
+        <input type="button" value="Resutado" onclick="sortTable()" class="btn btn-info" id="resultado">
+        <button type="reset" class="btn btn-danger">Limpar</button>
+
+    </form>
+    <h1>Resultados</h1>
+    <table class="table table-bordered table-hover table-striped" id="tabela">
+        
+        <thead class="thead-dark">
+            <tr>
+                
+                <th>Largada</th>
+                <th>Competidor(s)</th>
+                <th>Tempo (s)</th>
+                
+            </tr>
+        </thead>
+        <tbody id="tabela1">
+
+        </tbody>
+                    
+        </table>
+
+    
+    <table class="table table-bordered table-striped" id="tabelaresultado" style="display:none">
+        <thead class="thead-dark">
+            <th>Posição</th>
+            <th>Largada</th>
+            <th>Competidor(a)</th>
+            <th>Tempo (s)</th>
+            <th>Resultado</th>
+        </thead>
+            
+        <tbody id="tabelaresultado1">
+                
+            </tbody>
+        </table>    
+    </div>
+</body>
+</html>
