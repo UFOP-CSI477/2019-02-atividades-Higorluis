@@ -7,9 +7,9 @@ function validar(campo, alerta){
     if(contador>=6){
       alert("Só é possivel adicionar 6 competidores!")
       document.getElementById("adicionar").disabled = "true";
+      document.getElementById("adicionar").disabled = "false";
       return false
     }
-
     if(n.length == 0 ){
 		// Erro
 		//Exibir alerta
@@ -30,7 +30,7 @@ function validar(campo, alerta){
 	return true
 
 }
-function sortTable() {
+function ordernar() {
     competidores.sort((a,b) => parseFloat(a.tempo) - parseFloat(b.tempo));
     
     competidores.map((competidor,index) =>{
@@ -53,13 +53,13 @@ function sortTable() {
 
     document.getElementById("tabelaresultado").style.display = "table"
     document.getElementById("tabela").style.display = "none" 
-    document.getElementById("resultado").disabled = "true";
+    
 }
  
    
 
 
-function processar(idTabela){
+function adicionar(idTabela){
     let n1 = document.dados.nome;
     let n2 = document.dados.tempo;
     let n3 = document.dados.posicao;
