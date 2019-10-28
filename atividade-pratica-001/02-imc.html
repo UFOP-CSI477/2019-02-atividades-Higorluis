@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculo IMC</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="02-imc.js"></script>
+    <link rel="stylesheet" href="02-imc.css">
+</head>
+<body>
+    <h1>Cálculo IMC</h1>
+    <div class="container">
+    <form name="dados">
+		<div id="grupo1" class="form-group">
+            <label for="peso" id="label1">Peso em Kg</label>  
+            <input type="number" name="peso" id="peso" class="form-control">
+        
+		</div>
+
+        <div id="grupo2" class="form-group">
+            <label for="altura" id="label2">Altura em centímetros</label>
+            <input type="number" name="altura" id="altura" class="form-control">
+        
+        </div>
+         
+        <input type="button" value="Calcular" onclick="calcular()" class="btn btn-primary">
+        <input type="reset" name="" value="Limpar" class="btn btn-warning">
+    
+        <div id="resultado" class="form-gruop">
+            <label for="resultado">IMC</label>
+            <input type="number" name="resultado" value="" id="resultado" class="form-control" disabled="">  
+        </div>
+        
+        <div id="classificacao" class="form-gruop">
+            <label for="classificacao">Classificação IMC</label>
+            <input type="text" name="classificacao" value="" id="classificacao" class="form-control" disabled="">
+
+        </div>
+        <div id="minideal" class="form-gruop">
+            <label for="minideal">Peso minimo ideal</label>
+            <input type="text" name="minideal" value="" id="minideal" class="form-control" disabled="">
+
+        </div>
+        <div id="maxdeal" class="form-gruop">
+            <label for="maxdeal">Peso maximo ideal</label>
+            <input type="text" name="maxdeal" value="" id="maxdeal" class="form-control" disabled="">
+
+        </div>
+    
+    </form>
+    </div>
+</body>
+</html>
+
