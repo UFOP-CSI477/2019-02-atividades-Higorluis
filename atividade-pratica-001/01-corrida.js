@@ -9,9 +9,6 @@ function validar(campo, alerta){
       document.getElementById("adicionar").disabled = "true";
       return false
     }
-    if(contador<6){
-      document.getElementById("resultado").disabled = "true";
-    }
 
     if(n.length == 0 ){
 		// Erro
