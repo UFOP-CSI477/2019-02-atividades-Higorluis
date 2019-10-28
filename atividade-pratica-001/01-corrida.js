@@ -7,9 +7,12 @@ function validar(campo, alerta){
     if(contador>=6){
       alert("Só é possivel adicionar 6 competidores!")
       document.getElementById("adicionar").disabled = "true";
-      document.getElementById("adicionar").disabled = "false";
       return false
     }
+    if(contador<6){
+      document.getElementById("resultado").disabled = "true";
+    }
+
     if(n.length == 0 ){
 		// Erro
 		//Exibir alerta
@@ -53,12 +56,9 @@ function ordernar() {
 
     document.getElementById("tabelaresultado").style.display = "table"
     document.getElementById("tabela").style.display = "none" 
-    
+    document.getElementById("resultado").disabled = "true";
 }
  
-   
-
-
 function adicionar(idTabela){
     let n1 = document.dados.nome;
     let n2 = document.dados.tempo;
