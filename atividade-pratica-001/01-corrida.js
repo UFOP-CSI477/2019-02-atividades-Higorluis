@@ -59,7 +59,7 @@ function ordernar() {
     document.getElementById("resultado").disabled = "true";
 }
  
-function adicionar(idTabela){
+function acrescentar(idTabela){
     let n1 = document.dados.nome;
     let n2 = document.dados.tempo;
     let n3 = document.dados.posicao;
