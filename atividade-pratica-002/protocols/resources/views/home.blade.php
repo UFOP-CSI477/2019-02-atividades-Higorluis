@@ -8,13 +8,13 @@
     <li class="nav-header">Menu</li>
     <li class="nav-item ">
             <a class="nav-link " href="http://localhost:8000/home/registrar">
-                <i class="fas fa-fw fa-user "></i>
+                <i class="fas fa-fw fa-user-plus"></i>
                 <p>Registrar</p>
             </a>
     </li>
     <li class="nav-item ">
             <a class="nav-link " href="http://localhost:8000/home/registrados">
-                <i class="fas fa-fw fa-lock "></i>
+            <i class="fas fa-fw fa-address-book"></i>
                 <p>Registrados</p>
             </a>
     </li>
